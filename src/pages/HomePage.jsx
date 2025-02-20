@@ -11,7 +11,11 @@ const HomePage = () => {
           smartwatch y smartphone, permite a los árbitros registrar eventos de
           manera eficiente y precisa durante los partidos.
         </p>
-        <img src="\Images/Referee.png" alt="Árbitro" className="intro_image" />
+        <img
+          src="/whistle-time-landing/Images/Referee.png"
+          alt="Árbitro"
+          className="intro_image"
+        />
       </div>
 
       {/* Sección de motivos */}
@@ -43,13 +47,16 @@ const HomePage = () => {
       <div className="documents_section">
         <p className="documents_title">Documentos importantes</p>
         <div className="buttons">
-          <a href="\docs\Aviso-de-Privacidad-Integral_WhistleTime.pdf" download>
+          <a
+            href="/whistle-time-landing/docs/Aviso-de-Privacidad-Integral_WhistleTime.pdf"
+            download
+          >
             <button className="doc_button">
               Descargar Aviso de Privacidad
             </button>
           </a>
           <a
-            href="\docs\Términos-y-Condiciones-de-Uso_WhistleTime.pdf"
+            href="/whistle-time-landing/docs/Términos-y-Condiciones-de-Uso_WhistleTime.pdf"
             download
           >
             <button className="doc_button">
