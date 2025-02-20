@@ -44,7 +44,7 @@ const HomePage = () => {
         <p className="documents_title">Documentos importantes</p>
         <div className="buttons">
           <a
-            href="/public\docs\Aviso-de-Privacidad-Integral_WhistleTime.pdf"
+            href="public\docs\Aviso-de-Privacidad-Integral_WhistleTime.pdf"
             download
           >
             <button className="doc_button">
@@ -52,7 +52,7 @@ const HomePage = () => {
             </button>
           </a>
           <a
-            href="/public\docs\Aviso-de-Privacidad-Integral_WhistleTime.pdf"
+            href="public\docs\Términos-y-Condiciones-de-Uso_WhistleTime.pdf"
             download
           >
             <button className="doc_button">
