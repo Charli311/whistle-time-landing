@@ -1,45 +1,68 @@
-import Header from "../components/header";
 import "../styles/HomePage.scss";
 
-//TODO: Landing page
 const HomePage = () => {
   return (
-    <>
-      <Header />
-      <section className="body">
-        <p>Revolucionando el arbitraje de Futból</p>
-        <div className="intro">
-          <p>
-            Somos un emprendimiento mexicano dedicado a optimizar la labor
-            arbitral a través de la tecnología. Nuestra aplicación, diseñada
-            para smartwatch y smartphone, permite a los árbitros registrar
-            eventos de manera eficiente y precisa durante los partidos.
-          </p>
-          <p className="intro_image">Aqui va una imagen</p>
-        </div>
-        <div className="motives_section">
-          <p className="title">¿Porque eligir nuestra aplicacion?</p>
-          <ul className="motives">
+    <section className="body">
+      {/* Introducción */}
+      <div className="intro">
+        <p>
+          Somos un emprendimiento mexicano dedicado a optimizar la labor
+          arbitral a través de la tecnología. Nuestra aplicación, diseñada para
+          smartwatch y smartphone, permite a los árbitros registrar eventos de
+          manera eficiente y precisa durante los partidos.
+        </p>
+        <img src="/Images/Referee.png" alt="Árbitro" className="intro_image" />
+      </div>
+
+      {/* Sección de motivos */}
+      <div className="motives_section">
+        <p className="title">¿Por qué elegir nuestra aplicación?</p>
+        <div className="motives">
+          <ul className="motives-list">
             <li>
-              <b>Eficiencia en tiempo real: </b>Registra tarjetas, goles,
-              cambios y otras incidencias sin necesidad de papel y lapiz.
+              <b>Eficiencia en tiempo real:</b> Registra tarjetas, goles,
+              cambios y otras incidencias sin necesidad de papel y lápiz.
             </li>
             <li>
-              <b>Sincronización inteligente: </b>Toda la información se guarda
+              <b>Sincronización inteligente:</b> Toda la información se guarda
               automáticamente y puede consultarse desde cualquier dispositivo.
             </li>
             <li>
-              <b>Diseño intuitiva: </b>Intefaz fácil de usar que permite un
-              accesso rápido a las funciones esenciales.
+              <b>Diseño intuitivo:</b> Interfaz fácil de usar que permite un
+              acceso rápido a las funciones esenciales.
             </li>
             <li>
-              <b>Optimización del proceso: </b>Reduce errorres humanos y mejora
-              la transparencia en el ar
+              <b>Optimización del proceso:</b> Reduce errores humanos y mejora
+              la transparencia en el arbitraje.
             </li>
           </ul>
         </div>
-      </section>
-    </>
+      </div>
+
+      {/* Sección de documentos */}
+      <div className="documents_section">
+        <p className="documents_title">Documentos importantes</p>
+        <div className="buttons">
+          <a
+            href="/public\docs\Aviso-de-Privacidad-Integral_WhistleTime.pdf"
+            download
+          >
+            <button className="doc_button">
+              Descargar Aviso de Privacidad
+            </button>
+          </a>
+          <a
+            href="/public\docs\Aviso-de-Privacidad-Integral_WhistleTime.pdf"
+            download
+          >
+            <button className="doc_button">
+              Descargar Términos y Condiciones
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
   );
 };
+
 export default HomePage;

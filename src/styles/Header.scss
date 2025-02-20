@@ -1,10 +1,11 @@
+@use "../assets/Colors.scss" as colors;
 .head {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
   height: 10vh;
-  background-color: gray;
-  color: aqua;
+  background-color: colors.$primary;
+  color: colors.$on-primary;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,13 +21,13 @@
     gap: 1rem;
 
     .nav-link {
-      color: aqua;
+      color: colors.$on-primary;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s;
 
       &:hover {
-        color: white;
+        color: colors.$on-primary-container;
       }
     }
   }

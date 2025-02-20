@@ -1,0 +1,61 @@
+@use "../assets/Colors.scss" as colors;
+
+.download-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: colors.$primary-container;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto; // Evita cortes en pantallas pequeñas
+  padding: 2rem 0;
+
+  .download-container {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    padding: 2rem;
+    background-color: colors.$secondary-container;
+    color: colors.$on-secondary-container;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    ol {
+      text-align: left;
+      padding: 0 2rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+
+      li {
+        margin-bottom: 0.8rem;
+      }
+    }
+
+    .download-button {
+      display: inline-block;
+      background-color: colors.$primary;
+      color: colors.$on-primary;
+      padding: 0.8rem 1.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      margin-top: 1.5rem;
+
+      &:hover {
+        background-color: colors.$secondary;
+      }
+    }
+  }
+}
