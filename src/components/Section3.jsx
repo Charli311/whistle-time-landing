@@ -8,7 +8,7 @@ const Section3 = () => {
       <div className="section3__content">
         <div className="section3__left">
           <img
-            src="\Images\qrCodePlaceholder.jpg"
+            src="/Images/qrCodePlaceholder.jpg"
             alt="QR Code para Descargar"
             className="section3__qr"
           />

@@ -12,7 +12,7 @@ const Section1 = () => {
         </div>
         <div className="section1__right">
           <img
-            src="\Images\2 - Welcome.svg"
+            src="/Images/2 - Welcome.svg"
             alt="Registro de fútbol"
             className="section1__image"
           />
