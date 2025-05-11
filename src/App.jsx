@@ -1,15 +1,14 @@
-import { Route, Routes } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import DownloadPage from "./pages/DownloadPage";
-import ContactPage from "./pages/ContactPage";
+import LongScrollingPage from "./pages/LongScrollingPage";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/download" element={<DownloadPage />} />
-      <Route path="/contact" element={<ContactPage />} />
-    </Routes>
+    <>
+      <Header />
+      <LongScrollingPage />
+      <Footer />
+    </>
   );
 }
 

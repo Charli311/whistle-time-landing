@@ -1,0 +1,37 @@
+@use "Colors" as colors;
+
+@mixin text-style(
+  $color,
+  $font-size,
+  $font-weight,
+  $line-height,
+  $letter-spacing: 0
+) {
+  color: $color;
+  font-size: $font-size;
+  font-family: "Roboto", sans-serif;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  word-wrap: break-word;
+}
+
+@mixin title {
+  @include text-style(black, 36px, 400, 44px);
+}
+
+@mixin subtitle {
+  @include text-style(white, 24px, 400, 32px);
+}
+
+@mixin branding {
+  @include text-style(white, 24px, 300, 32px);
+}
+
+@mixin footer-strong {
+  @include text-style(white, 16px, 900, 32px);
+}
+
+@mixin paragraph {
+  @include text-style(black, 16px, 400, 24px, 0.5px);
+}
