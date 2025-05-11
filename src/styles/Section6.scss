@@ -1,0 +1,57 @@
+@use "../assets/Colors.scss" as colors;
+@use "../assets/TextStyles.scss" as text;
+
+.section6 {
+  background-color: colors.$surface;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.section6__content {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section6__title {
+  @include text.title;
+  color: colors.$primary;
+  text-align: center;
+}
+
+.section6__accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.accordion-item {
+  background-color: colors.$primary-container;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.accordion-question {
+  @include text.subtitle;
+  color: colors.$on-primary-container;
+}
+
+.accordion-answer {
+  @include text.paragraph;
+  color: colors.$on-surface;
+  margin-top: 8px;
+  padding-left: 16px;
+  border-left: 3px solid colors.$primary;
+}
