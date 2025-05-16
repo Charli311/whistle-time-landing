@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="footer__right">
           <a href="" target="_blank" rel="noopener noreferrer">
             <img
-              src="/whistle_time_landing/Images/Facebook.svg"
+              src="/whistle-time-landing/Images/Facebook.svg"
               alt="Facebook"
             />
           </a>
@@ -30,7 +30,7 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <img
-              src="/whistle_time_landing/Images/Instagram.png"
+              src="/whistle-time-landing/Images/Instagram.png"
               alt="Instagram"
             />
           </a>

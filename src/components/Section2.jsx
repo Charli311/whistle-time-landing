@@ -13,7 +13,7 @@ const Section2 = () => {
           </p>
           <div className="reason-image">
             <img
-              src="/whistle_time_landing/Images/productivity.png"
+              src="/whistle-time-landing/Images/productivity.png"
               alt="Eficiencia"
             />
           </div>
@@ -26,7 +26,7 @@ const Section2 = () => {
           </p>
           <div className="reason-image">
             <img
-              src="/whistle_time_landing/Images/connection.png"
+              src="/whistle-time-landing/Images/connection.png"
               alt="Sincronización"
             />
           </div>
@@ -39,7 +39,7 @@ const Section2 = () => {
           </p>
           <div className="reason-image">
             <img
-              src="/whistle_time_landing/Images/reports.png"
+              src="/whistle-time-landing/Images/reports.png"
               alt="Interfaz"
             />
           </div>
