@@ -17,12 +17,22 @@
   align-items: center;
   padding-bottom: 16px;
   border-bottom: 1px solid colors.$on-primary;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 24px;
+  }
 }
 
 .footer__left {
   flex: 1;
   display: flex;
   justify-content: flex-start;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .footer__center {
@@ -36,6 +46,10 @@
   display: flex;
   justify-content: flex-end;
   gap: 16px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .footer__text {
@@ -64,17 +78,32 @@
 }
 
 .footer__bottom {
-  margin-top: 16px;
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  margin-top: 24px;
   display: flex;
   justify-content: center;
-  gap: 32px;
+  gap: 24px; /* Ajuste del gap */
+  flex-wrap: wrap; /* Permite que los enlaces se acomoden mejor */
+
+  @media (max-width: 768px) {
+    gap: 16px;
+  }
 }
 
 .footer__link {
   @include text.paragraph;
   color: colors.$on-primary;
   text-decoration: none;
-  padding: 4px 8px;
+  padding: 8px 16px;
   transition: background-color 0.3s, color 0.3s;
   border-radius: 4px;
+  background-color: transparent; /* Fondo transparente inicialmente */
+  text-align: center; /* Centramos el texto */
+  flex-grow: 1; /* Permite que los enlaces ocupen el mismo ancho */
+  max-width: 160px; /* Ancho máximo para mantener proporciones */
+
+  &:hover {
+    background-color: colors.$on-primary;
+    color: colors.$primary;
+  }
 }

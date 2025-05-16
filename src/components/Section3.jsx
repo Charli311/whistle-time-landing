@@ -7,11 +7,13 @@ const Section3 = () => {
     <section className="section section3">
       <div className="section3__content">
         <div className="section3__left">
-          <img
-            src="/Images/qrCodePlaceholder.jpg"
-            alt="QR Code para Descargar"
-            className="section3__qr"
-          />
+          <a href="https://play.google.com/store/apps/details?id=com.whistletime.app">
+            <img
+              src="/Images/QR_WhistleTime_app.png"
+              alt="QR Code para Descargar"
+              className="section3__qr"
+            />
+          </a>
         </div>
 
         <div className="section3__right">
