@@ -8,41 +8,98 @@
   align-items: center;
   justify-content: center;
   padding: 24px;
+
+  // Reducimos el padding para pantallas pequeñas
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
 }
 
 .section2__content {
   display: flex;
-  gap: 24px;
+  gap: 32px; // Aumentamos el gap para mayor separación
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px; // Aumentamos el ancho máximo en pantallas grandes
   justify-content: center;
+
+  @media (max-width: 992px) {
+    max-width: 1200px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
 }
 
 .reason-card {
   flex: 1;
   background-color: colors.$surface;
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 24px; // Aumentamos el padding para darle más espacio
+  border-radius: 16px; // Un borde más redondeado
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); // Sombra más pronunciada
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: transform 0.3s, box-shadow 0.3s;
 
   &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05); // Crece al hacer hover
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 380px; // Tarjetas más grandes en pantallas grandes
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 320px;
+    padding: 16px;
+    margin-bottom: 16px;
   }
 }
 
 .reason-title {
   @include text.subtitle;
   color: colors.$primary;
-  margin-bottom: 12px;
+  margin-bottom: 16px; // Mayor espacio entre el título y la descripción
+
+  @media (min-width: 1200px) {
+    font-size: 1.75rem; // Título más grande en pantallas grandes
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+  }
 }
 
-.reason-image img {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
+.reason-image {
+  margin-top: 24px; // Mayor espacio superior
+
+  img {
+    width: 80px; // Imagen más grande
+    height: 80px;
+    object-fit: contain;
+
+    @media (max-width: 768px) {
+      width: 64px;
+      height: 64px;
+    }
+  }
+}
+
+.reason-description {
+  color: colors.$on-background;
+  text-align: center;
+  margin-top: 12px;
+
+  @media (min-width: 1200px) {
+    font-size: 1.1rem; // Texto ligeramente más grande
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.875rem;
+  }
 }

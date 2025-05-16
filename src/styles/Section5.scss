@@ -8,6 +8,10 @@
   align-items: center;
   justify-content: center;
   padding: 48px 24px;
+
+  @media (max-width: 768px) {
+    padding: 32px 16px;
+  }
 }
 
 .section5__content {
@@ -17,29 +21,41 @@
   flex-direction: column;
   align-items: center;
   gap: 32px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 }
 
 .section5__title {
   @include text.title;
   color: colors.$primary;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 }
 
 .section5__subtitle {
   @include text.subtitle;
   color: colors.$on-background;
   text-align: center;
+  margin-bottom: 24px;
 }
 
 .section5__timeline {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  position: relative;
+  gap: 32px;
+  width: 100%;
+  align-items: center; /* Centramos los pasos */
 }
 
 .timeline-step {
   display: flex;
-  align-items: center;
+  flex-direction: column; /* Cambio a columna */
+  align-items: center; /* Centrar el contenido */
   gap: 16px;
   position: relative;
 }
@@ -56,18 +72,32 @@
   background-color: colors.$surface;
   padding: 16px;
   border-radius: 8px;
-  flex-grow: 1;
+  width: 100%;
+  max-width: 300px; /* Ajustamos el ancho */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centramos el texto */
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 }
 
 .timeline-title {
   @include text.subtitle;
   color: colors.$primary;
   margin-bottom: 8px;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 }
 
 .timeline-description,
 .timeline-additional {
   @include text.paragraph;
   color: colors.$on-surface;
+
+  @media (max-width: 768px) {
+    font-size: 0.875rem;
+  }
 }

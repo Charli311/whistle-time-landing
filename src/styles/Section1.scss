@@ -8,14 +8,26 @@
   align-items: center;
   justify-content: center;
   padding: 24px;
+
+  // Ajuste del padding para pantallas más pequeñas
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
 }
 
 .section1__content {
   display: flex;
   width: 100%;
-  max-width: 1200px;
   gap: 32px;
   padding: 0 24px;
+  // max-width limita el ancho del contenido
+  max-width: 1200px;
+
+  // Cambio a layout en columna para móviles
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 24px; // Reducimos el gap para un diseño más compacto
+  }
 }
 
 .section1__left {
@@ -24,27 +36,53 @@
   flex-direction: column;
   justify-content: center;
   gap: 16px;
+
+  // Ajuste del padding y alineación para móviles
+  @media (max-width: 768px) {
+    align-items: center; // Centramos el contenido
+    text-align: center; // Centrar el texto
+  }
 }
 
 .section1__right {
   flex: 1;
   display: flex;
   justify-content: center;
+
+  // Ajuste del tamaño de la imagen para móviles
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .section1__title {
   @include text.title;
   color: colors.$primary;
+
+  // Ajuste del tamaño del texto para pantallas pequeñas
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+  }
 }
 
 .section1__subtitle {
   @include text.subtitle;
   color: colors.$on-background;
+
+  // Ajuste del tamaño del texto para pantallas pequeñas
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 }
 
 .section1__image {
-  height: 80vh;
+  width: 17rem;
   object-fit: contain;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
+
+  // Ajuste del tamaño de la imagen para pantallas pequeñas
+  @media (max-width: 768px) {
+    width: 12rem; // Reducción del tamaño para móviles
+  }
 }
