@@ -19,14 +19,20 @@ const Footer = () => {
 
         <div className="footer__right">
           <a href="" target="_blank" rel="noopener noreferrer">
-            <img src="/Images/Facebook.svg" alt="Facebook" />
+            <img
+              src="/whistle_time_landing/Images/Facebook.svg"
+              alt="Facebook"
+            />
           </a>
           <a
             href="https://www.instagram.com/whistletime_oficial"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/Images/Instagram.png" alt="Instagram" />
+            <img
+              src="/whistle_time_landing/Images/Instagram.png"
+              alt="Instagram"
+            />
           </a>
         </div>
       </div>

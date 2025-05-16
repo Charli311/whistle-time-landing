@@ -12,7 +12,10 @@ const Section2 = () => {
             {Strings.reasons.precision.description}
           </p>
           <div className="reason-image">
-            <img src="/Images/productivity.png" alt="Eficiencia" />
+            <img
+              src="/whistle_time_landing/Images/productivity.png"
+              alt="Eficiencia"
+            />
           </div>
         </div>
 
@@ -22,7 +25,10 @@ const Section2 = () => {
             {Strings.reasons.connection.description}
           </p>
           <div className="reason-image">
-            <img src="/Images/connection.png" alt="Sincronización" />
+            <img
+              src="/whistle_time_landing/Images/connection.png"
+              alt="Sincronización"
+            />
           </div>
         </div>
 
@@ -32,7 +38,10 @@ const Section2 = () => {
             {Strings.reasons.reports.description}
           </p>
           <div className="reason-image">
-            <img src="/Images/reports.png" alt="Interfaz" />
+            <img
+              src="/whistle_time_landing/Images/reports.png"
+              alt="Interfaz"
+            />
           </div>
         </div>
       </div>

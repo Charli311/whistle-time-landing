@@ -12,7 +12,7 @@ const HomePage = () => {
           manera eficiente y precisa durante los partidos.
         </p>
         <img
-          src="/whistle-time-landing/Images/Referee.png"
+          src="/whistle-time-landing/whistle_time_landing/Images/Referee.png"
           alt="Árbitro"
           className="intro_image"
         />
